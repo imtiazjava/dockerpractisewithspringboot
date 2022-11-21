@@ -1,0 +1,5 @@
+package com.cgi.main.model;
+
+public class Department {
+
+}

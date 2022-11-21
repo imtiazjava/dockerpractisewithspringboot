@@ -1,0 +1,5 @@
+ 
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27011
+spring.data.mongodb.database=db1
+

@@ -1,0 +1,29 @@
+package com.cgi.main.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DepartmentService {
+
+	@Autowired
+	private DepartmentRepository departmentRepository;
+
+	public Department saveDepartment(Department department) {
+		// TODO Auto-generated method stub
+		return this.departmentRepository.save(department);
+	}
+
+	public Department getDepartmentById(Long id) {
+		// TODO Auto-generated method stub
+		Optional<Department> d = this.departmentRepository.findById(id);
+		if (d.isPresent()) {
+			return d.get();
+		} else {
+			return null;
+		}
+	}
+
+	public List<Department> getDepartments() {
+		return this.departmentRepository.findAll();
+	}
+}

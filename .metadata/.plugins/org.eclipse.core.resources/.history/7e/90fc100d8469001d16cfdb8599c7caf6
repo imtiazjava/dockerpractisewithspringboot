@@ -1,0 +1,5 @@
+package com.cgi.main.repository;
+
+public class DepartmetRepository {
+
+}

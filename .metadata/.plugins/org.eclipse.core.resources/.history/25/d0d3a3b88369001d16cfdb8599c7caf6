@@ -1,0 +1,8 @@
+package com.cgi.main.model;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(value = "department")
+public class Department {
+
+}
